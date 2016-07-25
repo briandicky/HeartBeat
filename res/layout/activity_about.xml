@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF" >
+
+    <ImageView
+        android:id="@+id/title_about"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/aboutus" />
+
+    <ImageView
+        android:id="@+id/tsai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_about"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/vince" />
+
+    <ImageView
+        android:id="@+id/vince"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tsai"
+        android:layout_below="@+id/tsai"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tsai2" />
+
+    <ImageView
+        android:id="@+id/mosquito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/vince"
+        android:layout_below="@+id/vince"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/mos" />
+    
+    <TextView
+        android:id="@+id/detail_tsai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vince"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/vince"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/detail_vince"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/detail_tsai"
+        android:layout_alignTop="@+id/tsai"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/detail_mos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mosquito"
+        android:layout_alignLeft="@+id/detail_tsai"
+        android:layout_marginBottom="17dp"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/all_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="15sp" />
+
+</RelativeLayout>
